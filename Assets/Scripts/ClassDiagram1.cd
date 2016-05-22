@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Assets.Scripts.CameraInput.CameraController" Collapsed="true">
+    <Position X="30.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAgCAMQhqAAEICgBxAwAQAQEQYAQAAAAACwQALASoI=</HashCode>
+      <FileName>Assets\Scripts\CameraInput\CameraController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.CameraInput.ControlInput" Collapsed="true">
+    <Position X="34.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAEAAIAiBAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CameraInput\ControlInput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.MAIN_MANAGERS.BattleManager">
+    <Position X="28.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JCQBBYPAACAQLQxAACAEAIifAAkgABFCUlAAMBgAAmQ=</HashCode>
+      <FileName>Assets\Scripts\MAIN MANAGERS\BattleManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.MAIN_MANAGERS.GameManager">
+    <Position X="29" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EIQAAgAEASAQAACBAYCQAYrgAAkAABYIQlAAEhCAAkE=</HashCode>
+      <FileName>Assets\Scripts\MAIN MANAGERS\GameManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.MAIN_MANAGERS.IntroManager">
+    <Position X="26.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAEE=</HashCode>
+      <FileName>Assets\Scripts\MAIN MANAGERS\IntroManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.MAIN_MANAGERS.StateManager" Collapsed="true">
+    <Position X="30.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEABAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAQgIAA=</HashCode>
+      <FileName>Assets\Scripts\MAIN MANAGERS\StateManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.MAIN_MANAGERS.TurnManager">
+    <Position X="30.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\MAIN MANAGERS\TurnManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.MapCreator.MapCreatorManager">
+    <Position X="42.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAaIACAAgAAAAACAAABAACAoACAAQmAAgAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\MapCreator\MapCreatorManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.MapCreator.MapGenerator">
+    <Position X="26.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAIAAAAAAAQAAAAAAAAAIAAAACAEAEAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\MapCreator\MapGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.MapCreator.TileXml">
+    <Position X="29" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\MapCreator\MapSaveLoad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.MapCreator.MapXmlContainer" Collapsed="true">
+    <Position X="30.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\MapCreator\MapSaveLoad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.MapCreator.MapSaveLoad">
+    <Position X="29" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAAAAAAAAAAAQAAEAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\MapCreator\MapSaveLoad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.Menu.Menu">
+    <Position X="14.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQEAAAAAAAAAAAAAAAAAAIAAAAAAAAAIAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Menu\Menu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.Menu.MenuManager" Collapsed="true">
+    <Position X="32.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAgAAAAAAAAgAAAAEEAAgAAAQAAAABAUE=</HashCode>
+      <FileName>Assets\Scripts\Menu\MenuManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.Players.AiPlayer">
+    <Position X="20.75" Y="23.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAIAAAABAAAAAQAEAEAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Players\AiPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.Players.CharacterCreator" Collapsed="true">
+    <Position X="32.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EKSGBAAFBCVQAQACAAAIAACBACAABAFhIQIgIACAAkE=</HashCode>
+      <FileName>Assets\Scripts\Players\CharacterCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.Players.CreatedCharacter">
+    <Position X="36.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQYAIAAQAAAAREAAAIAAAAMQAJAAkAAACAEQQAQQRGA=</HashCode>
+      <FileName>Assets\Scripts\Players\CreatedCharacter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.Players.Healthbar" Collapsed="true">
+    <Position X="32.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEAAAAACABIAAAAABAAAASAQAAAAEQAAAAIIgUQAA=</HashCode>
+      <FileName>Assets\Scripts\Players\Healthbar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.Players.Player">
+    <Position X="20.75" Y="1.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>xQWAxTShJOARI5SAQkkFoRHVtiAAAg4g/hQ0SiAx1FI=</HashCode>
+      <FileName>Assets\Scripts\Players\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.Players.PlayerGenerator">
+    <Position X="39.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAwAAEAAAAABAAQAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Assets\Scripts\Players\PlayerGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.Players.ShootingManager">
+    <Position X="29" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAACAAQAAABAAAABICABEQAACAIAIAAgAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Players\ShootingManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.Players.UserPlayer">
+    <Position X="23" Y="23.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Players\UserPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.SaveLoad.GameData">
+    <Position X="25" Y="8.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAMAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\SaveLoad\GameData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.SaveLoad.GameSaveLoad" Collapsed="true">
+    <Position X="30.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\SaveLoad\GameSaveLoad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.Sound.AudioManager" Collapsed="true">
+    <Position X="35.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAAAQIICAAEAAAAAACAAEAAAAAIACAAAAAAgABAQA=</HashCode>
+      <FileName>Assets\Scripts\Sound\AudioManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.Tiles.PrefabHolder">
+    <Position X="24.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAQAAAAAJAAAQAAAAAAAAGA=</HashCode>
+      <FileName>Assets\Scripts\Tiles\PrefabHolder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.Tiles.Tile" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="32.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAgAAQBiAAAIAUAABAAAEAAAgAAgAUIUAAEAAEACA=</HashCode>
+      <FileName>Assets\Scripts\Tiles\Tile.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Assets.Scripts.Tiles.TileHighlight" Collapsed="true">
+    <Position X="34.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Tiles\TileHighlight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.Tiles.TilePath">
+    <Position X="39.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DAAAAAAAAAAAAAAAAAAACAACgAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Tiles\TilePath.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.Tiles.TilePathFinder">
+    <Position X="24.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Tiles\TilePathFinder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.UI.Actions">
+    <Position X="46.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAcCAAAAAAAEQIAAIAIIEAAABAAAAAAAAEAA=</HashCode>
+      <FileName>Assets\Scripts\UI\Actions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.UI.OptionsMenu">
+    <Position X="14.75" Y="13.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>GASBABAASPACAAABgQ5AABAACAAQAAAFMIgAAwgKAAE=</HashCode>
+      <FileName>Assets\Scripts\UI\OptionsMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.UI.PauseManager" Collapsed="true">
+    <Position X="34.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUAAAIAACAAQAAAAAAAECAAAAAAAAAAAAAkAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\UI\PauseManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.Armor">
+    <Position X="17.25" Y="6.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>CAAAQAEABAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Weapons, Armour &amp; Items\Armor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.Item">
+    <Position X="15.75" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>CAJAAAAAACQAAAAAAAACAAAAAAAQAAAAEAAAAAAQAAA=</HashCode>
+      <FileName>Assets\Scripts\Weapons, Armour &amp; Items\Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.Weapon">
+    <Position X="14.75" Y="6.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>CIAAAAAAAAACAAAAAAAAAAAAAAAAAAgAAQAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Weapons, Armour &amp; Items\Weapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.UI.UiManager">
+    <Position X="37.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GgTEARIAGC6TISKABICCiChCAgEhIJ4IdFAgLgIADlA=</HashCode>
+      <FileName>Assets\Scripts\UI\UiManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Assets.Scripts.MAIN_MANAGERS.BattleState">
+    <Position X="29" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAEAACAAAAAAAAAAAAAQAAAgAAAA=</HashCode>
+      <FileName>Assets\Scripts\MAIN MANAGERS\BattleManager.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Assets.Scripts.MAIN_MANAGERS.DangerLevel" Collapsed="true">
+    <Position X="30.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAIAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\MAIN MANAGERS\BattleManager.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Assets.Scripts.MAIN_MANAGERS.GameState">
+    <Position X="24" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAgAAAAAAAAAAAAAAAAAAAAAAgIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\MAIN MANAGERS\StateManager.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Assets.Scripts.Tiles.TileType" Collapsed="true">
+    <Position X="34.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAABAAAAIAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Tiles\TileType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Assets.Scripts.ArmorSlotType">
+    <Position X="19.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Weapons, Armour &amp; Items\Armor.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Assets.Scripts.ArmorKey">
+    <Position X="44.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAACABAgAAgAABAABCAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Weapons, Armour &amp; Items\Armor.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Assets.Scripts.WeaponSlotType">
+    <Position X="13" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Weapons, Armour &amp; Items\Weapon.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Assets.Scripts.WeaponKey">
+    <Position X="39.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAEAAAABAAEAAAAMAA=</HashCode>
+      <FileName>Assets\Scripts\Weapons, Armour &amp; Items\Weapon.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="Assets.Scripts.MAIN_MANAGERS.OnStateChangeHandler">
+    <Position X="25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\MAIN MANAGERS\StateManager.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
