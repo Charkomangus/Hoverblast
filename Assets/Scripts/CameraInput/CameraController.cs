@@ -116,18 +116,18 @@ namespace Assets.Scripts.CameraInput
         /// <summary>
         /// Update camera movement and rotation 
         /// </summary>
-        private void FixedUpdate()
+        private void Update()
         {
             if(SceneManager.GetActiveScene().name == "Game" && GameManager.Instance.ReturnPauseManager().IsPaused()) return;
             _followingTarget = TargetFollow != null; //Check if a target exists and adjust the bool accordingly
+
+
             if (_followingTarget)
                 FollowTarget();
             else
                 Move();
 
-
-           
-
+            
             //Other Various Input
             if (Input.anyKeyDown && BattleManager.Instance.ReturnCurrentPlayer().IsUser())
                 ResetTarget();
@@ -163,7 +163,7 @@ namespace Assets.Scripts.CameraInput
                 case CameraState.Topdown:
                 {
                         _cameraState = CameraState.Angled;
-                        SetXRotation(50);
+                        SetXRotation(45);
                     Debug.Log("Camera is Angled");
 
                     break;
@@ -263,41 +263,34 @@ namespace Assets.Scripts.CameraInput
         private void Move()
         {
 
-            if (_cameraState == CameraState.Angled && !_followingTarget)
+            if (_cameraState == CameraState.Angled)
             {
-                SetBlendedEulerAngles(new Vector3(50,transform.localEulerAngles.y,0));
+                SetBlendedEulerAngles(new Vector3(45,transform.localEulerAngles.y,0));
                 // Turn towards our target rotation.
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, _targetRotation, 50*Time.deltaTime);
             }
-            //if (!_followingTarget && _cameraState == CameraState.Angled)
-            //  wddw  transform.localEulerAngles = new Vector3(50, transform.localEulerAngles.y, 0);
+
+            //Movement with keys
             var desiredMove = new Vector3(ControlInput.KeyboardInput.x, 0, ControlInput.KeyboardInput.y);
+            desiredMove *= KeyboardMoveSpeed;
+            desiredMove *= Time.deltaTime;
+            desiredMove = Quaternion.Euler(new Vector3(0f, transform.eulerAngles.y, 0f))*desiredMove;
+            desiredMove = _transform.InverseTransformDirection(desiredMove);
+            _transform.Translate(desiredMove, Space.Self);
+            desiredMove = new Vector3();
 
-                desiredMove *= KeyboardMoveSpeed;
-                desiredMove *= Time.deltaTime;
-                desiredMove = Quaternion.Euler(new Vector3(0f, transform.eulerAngles.y, 0f))*desiredMove;
-                desiredMove = _transform.InverseTransformDirection(desiredMove);
-
-                _transform.Translate(desiredMove, Space.Self);
-            
-
-            
-                desiredMove = new Vector3();
-
+            //Screne edge panning
             var leftRect = new Rect(0, 0, ScreenEdgeBorder, Screen.height);
             var rightRect = new Rect(Screen.width - ScreenEdgeBorder, 0, ScreenEdgeBorder, Screen.height);
             var upRect = new Rect(0, Screen.height - ScreenEdgeBorder, Screen.width, ScreenEdgeBorder);
             var downRect = new Rect(0, 0, Screen.width, ScreenEdgeBorder);
-
             desiredMove.x = leftRect.Contains(ControlInput.MouseInput) ? -1 : rightRect.Contains(ControlInput.MouseInput) ? 1 : 0;
             desiredMove.z = upRect.Contains(ControlInput.MouseInput) ? 1 : downRect.Contains(ControlInput.MouseInput) ? -1 : 0;
-
             desiredMove *= ScreenEdgeMovementSpeed;
-                desiredMove *= Time.deltaTime;
-                desiredMove = Quaternion.Euler(new Vector3(0f, transform.eulerAngles.y, 0f))*desiredMove;
-                desiredMove = _transform.InverseTransformDirection(desiredMove);
-
-                _transform.Translate(desiredMove, Space.Self);
+            desiredMove *= Time.deltaTime;
+            desiredMove = Quaternion.Euler(new Vector3(0f, transform.eulerAngles.y, 0f))*desiredMove;
+            desiredMove = _transform.InverseTransformDirection(desiredMove);
+            _transform.Translate(desiredMove, Space.Self);
 
 
             if (!Input.GetKey(PanningKey) || ControlInput.MouseAxis == Vector2.zero) return;
@@ -369,12 +362,15 @@ namespace Assets.Scripts.CameraInput
                     var targetRotation = Quaternion.LookRotation(TargetFollow.position - transform.position);
                     // Smoothly rotate towards the target point.
                     transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 2 * Time.deltaTime);
-                    transform.localEulerAngles = new Vector3(50, transform.localEulerAngles.y, 0);
+                    transform.localEulerAngles = new Vector3(45, transform.localEulerAngles.y, 0);
                     //Set Target Position
                     var targetPos = TargetFollow.position;
-                    if(Vector3.Distance(new Vector3(_transform.position.x,0,0), new Vector3(TargetFollow.position.x,0,0)) > 5)
-                    _transform.position = Vector3.MoveTowards(_transform.position, new Vector3(targetPos.x, targetPos.y, targetPos.z), Time.deltaTime * FollowingSpeed/2);
-                
+                    if(Vector3.Distance(new Vector3(_transform.position.x,0,0), new Vector3(TargetFollow.position.x,0,0)) > 8)
+                        _transform.position = Vector3.MoveTowards(_transform.position, new Vector3(targetPos.x, targetPos.y, targetPos.z), Time.deltaTime * FollowingSpeed/2);
+                    if (_transform.position == new Vector3(targetPos.x, targetPos.y, targetPos.z))
+                    {
+                        _followingTarget = false;
+                    }
                         
                     
                     break;

@@ -40,7 +40,8 @@ namespace Assets.Scripts.UI
         //Accesory
         public Text Accesory;
 
-        //HitBox
+        //
+
         public Animator HitBox;
 
         //AbilityButtons

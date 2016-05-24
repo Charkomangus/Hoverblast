@@ -91,7 +91,7 @@ namespace Assets.Scripts.MAIN_MANAGERS
         private void Start()
         {
             _healingTargets = new List<Player>();
-            GameManager.Instance.GameUi.GetComponent<UiManager>().FadeIn.GetComponent<Animator>().SetTrigger("Open");
+            
 
         }
 

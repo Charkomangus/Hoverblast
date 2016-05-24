@@ -204,7 +204,9 @@ namespace Assets.Scripts.MAIN_MANAGERS
                     
                     break;
                 case 2:
-                        BattleManager.Instance.GeneratePlayers(Pvp, AiTank, AiJet, Player1Tank, Player1Jet, Player2Tank,
+                   
+                   
+                    BattleManager.Instance.GeneratePlayers(Pvp, AiTank, AiJet, Player1Tank, Player1Jet, Player2Tank,
                             Player2Jet, Pvp ? PvPList : CampaignList, null, false);
                     
                     break;
