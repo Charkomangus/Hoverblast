@@ -1,6 +1,6 @@
 # README #
 
 
-### ChessWithGuns ###
+### HOVERBLAST###
 
-Project for my HND game development course. My first real git project.
+A 3D turn-based strategy game made in Unity (team of 1)
